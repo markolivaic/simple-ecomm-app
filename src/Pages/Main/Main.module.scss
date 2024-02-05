@@ -1,21 +1,263 @@
 .main{
-    .newIn{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        height: 370px;
-        background-image: url('https://thesusoutdoors.com/cdn/shop/files/sustainable-ethical-footwear.png?v=1699524704&width=2000');
-        background-size: cover;
+    padding-top: 102px;
+    .imageHeader{
+        background-image: url("https://thesusoutdoors.com/cdn/shop/files/modern-winter-boot-thesusOutdoors.png?v=1699556145&width=2000");
+        background-size:cover;
         background-position: center;
         background-repeat: no-repeat;
-        h1{
-            color: white;
-            font-weight: 500;
-            font-size: 2.7rem;
+        height: 700px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        h2 {
+            font-weight: 400;
+            font-size: 2rem;
         }
-    } 
+        h1 {
+            font-weight: 700;
+            font-size: 4rem;
+        }
+        button {
+            padding: 12px 28px;
+            border: none;
+            background-color: white;
+            margin-top: 16px;
+            border-radius: 6px;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+    }
+
+    .quote{
+        color: #123026;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 64px 12px;
+        h1{
+            font-weight: 600;
+            font-size: 2.5rem;
+        }
+    }
+
+    .categories{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        margin: 60px 110px;
+        
+        .box{
+            width: 320px;
+            margin-bottom: 20px;
+            .imageContainer{
+
+                overflow: hidden;
+                img{
+                    transition: transform 0.3s ease-in;
+                    &:hover{
+                        transform: scale(1.03);
+                    }
+                }
+                
+            }
+            .textContainer{
+                display: flex;
+                align-items: center;
+                padding: 8px 0px;
+                h3{
+                    font-weight: 500;
+                }
+            }
+        }
+        
+    }
+
+    .bestSelling{
+        background-image: url("https://thesusoutdoors.com/cdn/shop/files/Frame_1841.png?v=1704131083&width=1780");
+        background-size:cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 700px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        text-align: center;
+        h2 {
+            font-weight: 200;
+            font-size: 1.7rem; 
+            color: hsl(0, 0%, 95%);
+        }
+        h1 {
+            font-weight: 700;
+            font-size: 3rem;
+        }
+        button {
+            padding: 14px 36px;
+            border: none;
+            background-color: white;
+            margin-top: 16px;
+            border-radius: 6px;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+    }
+
+    .onSaleNow{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 50%;
+        margin: 72px auto;
+        
+        h1{
+            font-weight: 600;
+            font-size: 3.5rem;
+            color: #123026;
+            
+        }
+        p{
+            font-size: 1.5rem;
+            color: #4D645C;
+            padding: 1rem;
+        }
+    }
+
+    .container {
+        overflow-x: auto;
+        white-space: nowrap;
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+            
+            .item {
+                display: inline-block;
+                margin: 12px 20px;
+                border-radius: 10px;
+                width: 320px;
+                
+                img {
+                    width: 320px;
+                    height: 320px; 
+                    padding: 18px;
+                }
+                p{
+                    width: 100%;
+                    word-wrap: break-word;
+                    overflow-wrap: break-word;
+                }
+                button {
+                    color: #123026;
+                    width: 95%;
+                    background-color: white;
+                    padding: 12px 30px;
+                    border: 2px solid #123026;
+                    border-radius: 5px;
+                    font-size: 0.8rem;
+                    transition: transform 0.2s ease-in;
+                    margin: 0 auto;
+                    overflow: visible;
+                    cursor: pointer;
+                        &:hover{
+                            transform: scale(1.03);
+                            overflow: visible;
+                        }
+                }
+            }
+        }
+
+      .arrows{
+        display: flex;
+        justify-content: center;
+        margin: 24px auto;
+        .arrow{
+            margin: 12px;
+            cursor: pointer;
+        }
+      }
+      .viewAll{
+        display: flex;
+        justify-content: center;
+        margin: 24px auto;
+        button {
+            color: #123026;
+            background-color: white;
+            padding: 12px 30px;
+            border: 2px solid #123026;
+            border-radius: 5px;
+            font-size: 0.8rem;
+            transition: transform 0.2s ease-in;
+            cursor: pointer;
+                &:hover{
+                    transform: scale(1.03);
+                }
+        }
+      }
 
 
-    
+      .learnMore{
+        display: flex;
+        margin: 12px 48px;
+        .learnOne{
+            flex: 1;
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        .learnTwo{
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            
+            padding: 48px 48px;
+            background-color: #F3F3F3;
+            h2{
+                color: #123026;
+                font-size: 2.6rem;
+                font-weight: 500;
+                width: 90%;
+            }
+            p {
+                color: #4A6159;
+                font-weight: 500;
+                font-size: 1.3rem;
+                width: 90%;
+                margin: 18px 0;
+            }
+            button {
+                color: white;
+                background-color: #123026;
+                padding: 12px 30px;
+                border-radius: 5px;
+                font-size: 0.8rem;
+                transition: transform 0.2s ease-in;
+                width: 25%;
+                margin-top: 12px;
+                cursor: pointer;
+                    &:hover{
+                        transform: scale(1.03);
+                    }
+            }
+        }
+      }
+}
+
+
+
+@media screen and (max-width: 1500px) {
+    .categories{
+        .box {
+            width: calc(50% - 20px); /* 50% width with margin included */
+        }
+    }
 }

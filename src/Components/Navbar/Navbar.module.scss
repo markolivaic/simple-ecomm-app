@@ -1,10 +1,13 @@
 .navbar{
-    position: sticky;
+    z-index: 10;
+    position: fixed;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
     padding: 20px 50px;
+    background-color: white;
+    width: 100%;
     .logo{
         img{
             width: 200px;

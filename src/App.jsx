@@ -1,6 +1,7 @@
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
 import {lazy, Suspense} from 'react'
 import Navbar from "./Components/Navbar/Navbar"
+import Footer from './Components/Footer/Footer'
 
 const Main = lazy(() => import("./Pages/Main/Main"))
 
@@ -13,6 +14,7 @@ function App() {
           <Route path='' element={<Main />} />
         </Routes>
       </Suspense>
+      <Footer />
     </Router>
   )
 }
