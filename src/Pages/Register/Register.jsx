@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import styles from './Register.module.scss'
 
-const Register = () => {
+const Register = () =>   {
 
   const [firstName, setFirstName] = useState('');
   const [lastName, setLastName] = useState('');

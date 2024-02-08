@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import styles from './Login.module.scss'
+import { NavLink } from "react-router-dom";
 
 const Login = () => {
 
@@ -23,7 +24,7 @@ const Login = () => {
 
   return (
     <div className={styles.login}> 
-      <h2>Create Account</h2>
+      <h2>Login</h2>
       <form onSubmit={handleSubmit}>
             <div className={styles.inputBox}>
             <input
@@ -45,7 +46,11 @@ const Login = () => {
                 required
             />
             </div>
-            <button type="submit">Create</button>
+            <p className={styles.forgotPass}>Forgot your password?</p>
+            <button type="submit">Sign in</button>
+            <NavLink to="/account/register" style={{color: "#123026", textDecoration: "none"}}>
+                <p className={styles.createAcc}>Create account</p>
+            </NavLink>
       </form>
     </div>
   );
