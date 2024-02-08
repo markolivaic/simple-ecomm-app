@@ -1,0 +1,56 @@
+.register {
+    padding-top: 102px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    h2{
+        padding: 18px 12px;
+        font-size: 2.3rem;
+        color: #123026;
+    }
+    form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 0 auto;
+        .inputBox{
+            margin: 12px auto;
+            position: relative;
+            input {
+                width: 400px;
+                height: 50px;
+                padding: 12px 16px 0 16px;
+                &::placeholder{
+                    transition: transform 0.5s, font-size 0.5s;
+                    color: #999;
+                    position: absolute;
+                    top: 50%;
+                    left: 15px;
+                    transform: translateY(-50%);
+                    font-size: 14px;
+                    opacity: 1;
+                }
+                &:focus::placeholder {
+                    top: 12px;
+                    font-size: 10px;
+                    opacity: 1 !important;
+                }
+            }
+        }
+        button {
+            padding: 14px 36px;
+            color: white; 
+            background-color: #123026;    
+            margin-top: 12px;
+            border-radius: 6px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: transform 0.2s ease-in;
+                &:hover{
+                    transform: scale(1.05);
+                }
+        }
+    }
+}
